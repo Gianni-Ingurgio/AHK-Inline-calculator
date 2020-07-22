@@ -7,6 +7,11 @@ jobs:
   AHKtoEXE:
     runs-on: windows-latest
     steps:
+      - 
       - uses: actions/checkout@v2
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Compiled AHK
+          path: ./Calculator.exe
       - run: |
           .\.github\workflows\compiler\AHK2EXE.exe /in ./Calculator.ahk /out ./Calculator.exe /icon pad.ico
