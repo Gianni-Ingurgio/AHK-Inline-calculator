@@ -7,4 +7,4 @@ jobs:
   AHKtoEXE:
     runs-on: windows-latest
     steps:
-    - run: /github/Compiler/Ahk2Exe.exe /in /Calculator.ahk /out /Calculator.exe /icon /pad.ico
+    - run: /github/workflows/Compiler/Ahk2Exe.exe /in /Calculator.ahk /out /Calculator.exe /icon /pad.ico
