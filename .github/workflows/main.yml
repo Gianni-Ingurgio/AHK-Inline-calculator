@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          .\.github\workflows\compiler\AHK2EXE.exe /in ./Calculator.ahk /out ${GITHUB_WORKSPACE}/Calculator.exe /icon pad.ico
+          .\.github\workflows\compiler\AHK2EXE.exe /in ./Calculator.ahk /out %GITHUB_WORKSPACE%/Calculator.exe /icon pad.ico
       - uses: actions/upload-artifact@v2
         with:
           name: Compiled AHK
