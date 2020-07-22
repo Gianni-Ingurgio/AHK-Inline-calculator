@@ -8,5 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
     - run: | 
-    tree
-    /github/workflows/Compiler/Ahk2Exe.exe /in /Calculator.ahk /out /Calculator.exe /icon /pad.ico
+     tree
+     /github/workflows/Compiler/Ahk2Exe.exe /in /Calculator.ahk /out /Calculator.exe /icon /pad.ico
