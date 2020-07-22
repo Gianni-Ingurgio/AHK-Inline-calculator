@@ -14,4 +14,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Compiled AHK
-          path: ${GITHUB_WORKSPACE}/Calculator.exe
+          path: D:\a\AHK-Inline-calculator\AHK-Inline-calculator\Calculator.exe
