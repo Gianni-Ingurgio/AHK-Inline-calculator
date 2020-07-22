@@ -5,15 +5,17 @@ jobs:
   AHKtoEXE:
     runs-on: windows-latest
     steps:
-      - name: Build 
-      - uses: actions/checkout@v2       
-      - run: |
+      - uses: actions/checkout@v2   
+        
+      - name: Build     
+        run: |
           .\.github\workflows\compiler\AHK2EXE.exe /in ./Calculator.ahk /out ./Calculator.exe /icon pad.ico
           dir
-      - uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: Compiled AHK
           path: D:\a\AHK-Inline-calculator\AHK-Inline-calculator\Calculator.exe
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -24,6 +26,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+
       - name: Upload Release Asset
         id: upload-release-asset 
         uses: actions/upload-release-asset@v1
