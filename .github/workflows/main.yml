@@ -8,5 +8,5 @@ jobs:
     runs-on: windows-latest
     steps:
     - run: |
-        cd /a/AHK-Inline-calculator
+        cd /a/AHK-Inline-calculator/AHK-Inline-calculator
         dir
