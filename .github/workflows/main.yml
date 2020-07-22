@@ -1,0 +1,10 @@
+name: AHK
+on:
+  push:
+    branches: [ master ]
+jobs:
+  AHKtoEXE:
+    runs-on: windows-latest
+    steps:
+    - name: AHKtoEXE
+      run: ./Compiler/Ahk2Exe.exe /in ..\..\Calculator.ahk /out ..\..\Calculator.exe /icon ..\..\pad.ico
