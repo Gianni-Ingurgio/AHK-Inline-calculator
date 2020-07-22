@@ -7,6 +7,4 @@ jobs:
   AHKtoEXE:
     runs-on: windows-latest
     steps:
-    - run: |
-     cd %GITHUB_EVENT_PATH%
-     ./Compiler/Ahk2Exe.exe /in /Calculator.ahk /out /Calculator.exe /icon /pad.ico
+    - run: tree
