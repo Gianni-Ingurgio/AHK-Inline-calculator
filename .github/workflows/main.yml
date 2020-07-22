@@ -11,6 +11,7 @@ jobs:
         run: |
           .\.github\workflows\compiler\AHK2EXE.exe /in ./Calculator.ahk /out ./Calculator.exe /icon pad.ico
           dir
+      - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
           name: Compiled AHK
