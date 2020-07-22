@@ -7,4 +7,6 @@ jobs:
   AHKtoEXE:
     runs-on: windows-latest
     steps:
-    - run: tree
+    - run: |
+        cd /
+        tree
